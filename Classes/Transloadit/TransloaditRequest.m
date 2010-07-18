@@ -43,8 +43,8 @@
 		[self performSelectorInBackground:@selector(saveImageToDisk:) withObject:file];
 	} else if ([mediaType isEqualToString:@"public.movie"]) {
 		NSURL *fileUrl = [info valueForKey:UIImagePickerControllerMediaURL];
-		NSString *filePath = [fileUrl path]; 
-		[self addFile:filePath forKey:field];
+		NSString *filePath = [fileUrl path];
+		[self setFile:filePath withFileName:@"iphone_video.mov" andContentType: @"video/quicktime" forKey:field];
 	}
 }
 
@@ -111,7 +111,7 @@
 
 - (void)addImageFromDisk:(NSMutableDictionary *)file
 {
-	[self addFile:[file objectForKey:@"path"] forKey:[file objectForKey:@"field"]];
+	[self setFile:[file objectForKey:@"path"] withFileName:@"iphone_image.jpg" andContentType: @"image/jpeg" forKey:[file objectForKey:@"field"]];
 	backgroundTasks--;
 	if (readyToStart) {
 		[self startAsynchronous];

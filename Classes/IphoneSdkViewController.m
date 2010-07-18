@@ -183,6 +183,21 @@
     return newImage; 
 }
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+	spinner.hidden = status.hidden = NO;
+	[spinner startAnimating];
+	
+	status.text = NSLocalizedString(@"generating thumb", @"");
+	[button setTitle:NSLocalizedString(@"Cancel", @"") forState:UIControlStateNormal];
+	
+	[self setThumbnail:picker info:info];
+	[self startUpload:info];
+	
+	[picker dismissModalViewControllerAnimated:YES];
+	[picker release];
+}
+
 #pragma mark actions
 
 - (IBAction)buttonTouch
@@ -204,21 +219,6 @@
 	picker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
 	picker.delegate = self;
 	[self presentModalViewController:picker animated:YES];
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-	spinner.hidden = status.hidden = NO;
-	[spinner startAnimating];
-
-	status.text = NSLocalizedString(@"generating thumb", @"");
-	[button setTitle:NSLocalizedString(@"Cancel", @"") forState:UIControlStateNormal];
-
-	[self setThumbnail:picker info:info];
-	[self startUpload:info];
-
-	[picker dismissModalViewControllerAnimated:YES];
-	[picker release];
 }
 
 #pragma mark controller
