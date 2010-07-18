@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* IphoneSdkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* IphoneSdkAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* IphoneSdkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* IphoneSdkViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* IphoneSdkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* IphoneSdkViewController.m */; };
+		DC70063911F1DE75005D6D1C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC70063811F1DE75005D6D1C /* icon.png */; };
+		DC70065711F1DF59005D6D1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DC70065611F1DF59005D6D1C /* Default.png */; };
+		DCCDA6F111F31367001602BB /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA6F011F31367001602BB /* Config.m */; };
+		DCCDA77A11F31B9E001602BB /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA76B11F31B9E001602BB /* ASIAuthenticationDialog.m */; };
+		DCCDA77B11F31B9E001602BB /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA76E11F31B9E001602BB /* ASIDownloadCache.m */; };
+		DCCDA77C11F31B9E001602BB /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA77011F31B9E001602BB /* ASIFormDataRequest.m */; };
+		DCCDA77D11F31B9E001602BB /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA77211F31B9E001602BB /* ASIHTTPRequest.m */; };
+		DCCDA77E11F31B9E001602BB /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA77611F31B9E001602BB /* ASIInputStream.m */; };
+		DCCDA77F11F31B9E001602BB /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA77811F31B9E001602BB /* ASINetworkQueue.m */; };
+		DCCDA78511F31BCA001602BB /* TransloaditRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCDA78411F31BCA001602BB /* TransloaditRequest.m */; };
+		DCF0A57A11EFAAC900EDFA28 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCF0A57911EFAAC900EDFA28 /* logo.jpg */; };
+		DCF0A76111EFD04900EDFA28 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A75611EFD04900EDFA28 /* NSObject+SBJSON.m */; };
+		DCF0A76211EFD04900EDFA28 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A75811EFD04900EDFA28 /* NSString+SBJSON.m */; };
+		DCF0A76311EFD04900EDFA28 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A75A11EFD04900EDFA28 /* SBJSON.m */; };
+		DCF0A76411EFD04900EDFA28 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A75C11EFD04900EDFA28 /* SBJsonBase.m */; };
+		DCF0A76511EFD04900EDFA28 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A75E11EFD04900EDFA28 /* SBJsonParser.m */; };
+		DCF0A76611EFD04900EDFA28 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A76011EFD04900EDFA28 /* SBJsonWriter.m */; };
+		DCF0A79211EFD13E00EDFA28 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF0A79111EFD13E00EDFA28 /* Reachability.m */; };
+		DCF0A79A11EFD16600EDFA28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF0A79911EFD16600EDFA28 /* CFNetwork.framework */; };
+		DCF0A79C11EFD16F00EDFA28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF0A79B11EFD16F00EDFA28 /* SystemConfiguration.framework */; };
+		DCF0A79E11EFD17600EDFA28 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF0A79D11EFD17600EDFA28 /* MobileCoreServices.framework */; };
+		DCF0A7A011EFD18A00EDFA28 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF0A79F11EFD18A00EDFA28 /* libz.1.2.3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* IphoneSdkAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneSdkAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* IphoneSdkAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneSdkAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Transloadit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transloadit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* IphoneSdkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IphoneSdkViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* IphoneSdkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneSdkViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* IphoneSdkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneSdkViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TransloaditIphoneSdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransloaditIphoneSdk_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TransloaditIphoneSdk-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TransloaditIphoneSdk-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DC70063811F1DE75005D6D1C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DC70065611F1DF59005D6D1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DCCDA6EF11F31367001602BB /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
+		DCCDA6F011F31367001602BB /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Classes/Config.m; sourceTree = "<group>"; };
+		DCCDA76A11F31B9E001602BB /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Classes/AsiHttpRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		DCCDA76B11F31B9E001602BB /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = Classes/AsiHttpRequest/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		DCCDA76C11F31B9E001602BB /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = Classes/AsiHttpRequest/ASICacheDelegate.h; sourceTree = "<group>"; };
+		DCCDA76D11F31B9E001602BB /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = Classes/AsiHttpRequest/ASIDownloadCache.h; sourceTree = "<group>"; };
+		DCCDA76E11F31B9E001602BB /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = Classes/AsiHttpRequest/ASIDownloadCache.m; sourceTree = "<group>"; };
+		DCCDA76F11F31B9E001602BB /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = Classes/AsiHttpRequest/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		DCCDA77011F31B9E001602BB /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = Classes/AsiHttpRequest/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		DCCDA77111F31B9E001602BB /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = Classes/AsiHttpRequest/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		DCCDA77211F31B9E001602BB /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = Classes/AsiHttpRequest/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		DCCDA77311F31B9E001602BB /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = Classes/AsiHttpRequest/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		DCCDA77411F31B9E001602BB /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = Classes/AsiHttpRequest/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		DCCDA77511F31B9E001602BB /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = Classes/AsiHttpRequest/ASIInputStream.h; sourceTree = "<group>"; };
+		DCCDA77611F31B9E001602BB /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = Classes/AsiHttpRequest/ASIInputStream.m; sourceTree = "<group>"; };
+		DCCDA77711F31B9E001602BB /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = Classes/AsiHttpRequest/ASINetworkQueue.h; sourceTree = "<group>"; };
+		DCCDA77811F31B9E001602BB /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = Classes/AsiHttpRequest/ASINetworkQueue.m; sourceTree = "<group>"; };
+		DCCDA77911F31B9E001602BB /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = Classes/AsiHttpRequest/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		DCCDA78311F31BCA001602BB /* TransloaditRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransloaditRequest.h; path = Classes/Transloadit/TransloaditRequest.h; sourceTree = "<group>"; };
+		DCCDA78411F31BCA001602BB /* TransloaditRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransloaditRequest.m; path = Classes/Transloadit/TransloaditRequest.m; sourceTree = "<group>"; };
+		DCF0A57911EFAAC900EDFA28 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		DCF0A75411EFD04900EDFA28 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DCF0A75511EFD04900EDFA28 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DCF0A75611EFD04900EDFA28 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DCF0A75711EFD04900EDFA28 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DCF0A75811EFD04900EDFA28 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DCF0A75911EFD04900EDFA28 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		DCF0A75A11EFD04900EDFA28 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		DCF0A75B11EFD04900EDFA28 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		DCF0A75C11EFD04900EDFA28 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		DCF0A75D11EFD04900EDFA28 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DCF0A75E11EFD04900EDFA28 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DCF0A75F11EFD04900EDFA28 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DCF0A76011EFD04900EDFA28 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DCF0A79011EFD13E00EDFA28 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DCF0A79111EFD13E00EDFA28 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DCF0A79911EFD16600EDFA28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DCF0A79B11EFD16F00EDFA28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DCF0A79D11EFD17600EDFA28 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DCF0A79F11EFD18A00EDFA28 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				DCF0A79A11EFD16600EDFA28 /* CFNetwork.framework in Frameworks */,
+				DCF0A79C11EFD16F00EDFA28 /* SystemConfiguration.framework in Frameworks */,
+				DCF0A79E11EFD17600EDFA28 /* MobileCoreServices.framework in Frameworks */,
+				DCF0A7A011EFD18A00EDFA28 /* libz.1.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0A77011EFD10700EDFA28 /* AsiHttpRequest */,
+				DCF0A75311EFD04900EDFA28 /* JSON */,
+				DCF0A74311EFCF8A00EDFA28 /* Transloadit */,
+				1D3623240D0F684500981E51 /* IphoneSdkAppDelegate.h */,
+				1D3623250D0F684500981E51 /* IphoneSdkAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* IphoneSdkViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* IphoneSdkViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Transloadit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				DCF0A79911EFD16600EDFA28 /* CFNetwork.framework */,
+				DCF0A79B11EFD16F00EDFA28 /* SystemConfiguration.framework */,
+				DCF0A79D11EFD17600EDFA28 /* MobileCoreServices.framework */,
+				DCF0A79F11EFD18A00EDFA28 /* libz.1.2.3.dylib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DCCDA6EF11F31367001602BB /* Config.h */,
+				DCCDA6F011F31367001602BB /* Config.m */,
+				DCF0A79011EFD13E00EDFA28 /* Reachability.h */,
+				DCF0A79111EFD13E00EDFA28 /* Reachability.m */,
+				32CA4F630368D1EE00C91783 /* TransloaditIphoneSdk_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC70065611F1DF59005D6D1C /* Default.png */,
+				DC70063811F1DE75005D6D1C /* icon.png */,
+				DCF0A57911EFAAC900EDFA28 /* logo.jpg */,
+				2899E5210DE3E06400AC0155 /* IphoneSdkViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TransloaditIphoneSdk-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF0A74311EFCF8A00EDFA28 /* Transloadit */ = {
+			isa = PBXGroup;
+			children = (
+				DCCDA78311F31BCA001602BB /* TransloaditRequest.h */,
+				DCCDA78411F31BCA001602BB /* TransloaditRequest.m */,
+			);
+			name = Transloadit;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DCF0A75311EFD04900EDFA28 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0A75411EFD04900EDFA28 /* JSON.h */,
+				DCF0A75511EFD04900EDFA28 /* NSObject+SBJSON.h */,
+				DCF0A75611EFD04900EDFA28 /* NSObject+SBJSON.m */,
+				DCF0A75711EFD04900EDFA28 /* NSString+SBJSON.h */,
+				DCF0A75811EFD04900EDFA28 /* NSString+SBJSON.m */,
+				DCF0A75911EFD04900EDFA28 /* SBJSON.h */,
+				DCF0A75A11EFD04900EDFA28 /* SBJSON.m */,
+				DCF0A75B11EFD04900EDFA28 /* SBJsonBase.h */,
+				DCF0A75C11EFD04900EDFA28 /* SBJsonBase.m */,
+				DCF0A75D11EFD04900EDFA28 /* SBJsonParser.h */,
+				DCF0A75E11EFD04900EDFA28 /* SBJsonParser.m */,
+				DCF0A75F11EFD04900EDFA28 /* SBJsonWriter.h */,
+				DCF0A76011EFD04900EDFA28 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		DCF0A77011EFD10700EDFA28 /* AsiHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				DCCDA76A11F31B9E001602BB /* ASIAuthenticationDialog.h */,
+				DCCDA76B11F31B9E001602BB /* ASIAuthenticationDialog.m */,
+				DCCDA76C11F31B9E001602BB /* ASICacheDelegate.h */,
+				DCCDA76D11F31B9E001602BB /* ASIDownloadCache.h */,
+				DCCDA76E11F31B9E001602BB /* ASIDownloadCache.m */,
+				DCCDA76F11F31B9E001602BB /* ASIFormDataRequest.h */,
+				DCCDA77011F31B9E001602BB /* ASIFormDataRequest.m */,
+				DCCDA77111F31B9E001602BB /* ASIHTTPRequest.h */,
+				DCCDA77211F31B9E001602BB /* ASIHTTPRequest.m */,
+				DCCDA77311F31B9E001602BB /* ASIHTTPRequestConfig.h */,
+				DCCDA77411F31B9E001602BB /* ASIHTTPRequestDelegate.h */,
+				DCCDA77511F31B9E001602BB /* ASIInputStream.h */,
+				DCCDA77611F31B9E001602BB /* ASIInputStream.m */,
+				DCCDA77711F31B9E001602BB /* ASINetworkQueue.h */,
+				DCCDA77811F31B9E001602BB /* ASINetworkQueue.m */,
+				DCCDA77911F31B9E001602BB /* ASIProgressDelegate.h */,
+			);
+			name = AsiHttpRequest;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TransloaditIphoneSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TransloaditIphoneSdk" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransloaditIphoneSdk;
+			productName = IphoneSdk;
+			productReference = 1D6058910D05DD3D006BFB54 /* Transloadit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TransloaditIphoneSdk" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TransloaditIphoneSdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* IphoneSdkViewController.xib in Resources */,
+				DCF0A57A11EFAAC900EDFA28 /* logo.jpg in Resources */,
+				DC70063911F1DE75005D6D1C /* icon.png in Resources */,
+				DC70065711F1DF59005D6D1C /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* IphoneSdkAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* IphoneSdkViewController.m in Sources */,
+				DCF0A76111EFD04900EDFA28 /* NSObject+SBJSON.m in Sources */,
+				DCF0A76211EFD04900EDFA28 /* NSString+SBJSON.m in Sources */,
+				DCF0A76311EFD04900EDFA28 /* SBJSON.m in Sources */,
+				DCF0A76411EFD04900EDFA28 /* SBJsonBase.m in Sources */,
+				DCF0A76511EFD04900EDFA28 /* SBJsonParser.m in Sources */,
+				DCF0A76611EFD04900EDFA28 /* SBJsonWriter.m in Sources */,
+				DCF0A79211EFD13E00EDFA28 /* Reachability.m in Sources */,
+				DCCDA6F111F31367001602BB /* Config.m in Sources */,
+				DCCDA77A11F31B9E001602BB /* ASIAuthenticationDialog.m in Sources */,
+				DCCDA77B11F31B9E001602BB /* ASIDownloadCache.m in Sources */,
+				DCCDA77C11F31B9E001602BB /* ASIFormDataRequest.m in Sources */,
+				DCCDA77D11F31B9E001602BB /* ASIHTTPRequest.m in Sources */,
+				DCCDA77E11F31B9E001602BB /* ASIInputStream.m in Sources */,
+				DCCDA77F11F31B9E001602BB /* ASINetworkQueue.m in Sources */,
+				DCCDA78511F31BCA001602BB /* TransloaditRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Felix Geisendoerfer (64F4QBRFF2)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TransloaditIphoneSdk_Prefix.pch;
+				INFOPLIST_FILE = "TransloaditIphoneSdk-Info.plist";
+				PRODUCT_NAME = Transloadit;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D16AD70F-6DE2-4FE6-8566-68F368B77E89";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TransloaditIphoneSdk_Prefix.pch;
+				INFOPLIST_FILE = "TransloaditIphoneSdk-Info.plist";
+				PRODUCT_NAME = TransloaditIphoneSdk;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TransloaditIphoneSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TransloaditIphoneSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
