@@ -3,11 +3,11 @@
 The transloadit iPhone SDK contains a sample iPhone project along with a
 `TransloaditRequest` class that you can use in your own project.
 
-<a href="http://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/1.png">
-<img src="http://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/1.png" height="500">
+<a href="https://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/1.png">
+<img src="https://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/1.png" height="500">
 </a>
-<a href="http://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/2.png">
-<img src="http://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/2.png" height="500">
+<a href="https://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/2.png">
+<img src="https://github.com/transloadit/iphone-sdk/raw/master/Screenshots/device/2.png" height="500">
 </a>
 
 ## Getting started
