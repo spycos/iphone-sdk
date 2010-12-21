@@ -33,7 +33,7 @@ need to install separately:
 * [json-framework](http://code.google.com/p/json-framework/wiki/InstallationInstructions) (New BSD License)
 * [ASIHttpRequest](http://allseeing-i.com/ASIHTTPRequest/Setup-instructions) (BSD License)
 
-## Example
+## Examples
 
 Assuming you have a UIImagePickerController callback, you can upload the selected
 file like this:
@@ -60,6 +60,16 @@ file like this:
 		NSLog(@"assembly id: %@", assemblyId);
 		[transload release];
 	}
+
+If you need to pass dynamic `params` instead of just a template id, you can
+tweak the example from above like this:
+
+	// [transload setTemplateId:@"your-template-id"];
+	[resizeStep setObject:@"/image/resize" forKey:@"robot"];
+	[resizeStep setObject:[NSNumber numberWithInt:100] forKey:@"width"];
+	[resizeStep setObject:[NSNumber numberWithInt:100] forKey:@"height"];
+	[steps setObject:resizeStep forKey:@"resize"];
+	[[transload params] setObject:steps forKey:@"steps"];
 
 ## TransloaditRequest API
 
