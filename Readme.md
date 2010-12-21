@@ -65,6 +65,8 @@ If you need to pass dynamic `params` instead of just a template id, you can
 tweak the example from above like this:
 
 	// [transload setTemplateId:@"your-template-id"];
+	NSMutableDictionary *steps = [[NSMutableDictionary alloc] init];
+	NSMutableDictionary *resizeStep = [[NSMutableDictionary alloc] init];
 	[resizeStep setObject:@"/image/resize" forKey:@"robot"];
 	[resizeStep setObject:[NSNumber numberWithInt:100] forKey:@"width"];
 	[resizeStep setObject:[NSNumber numberWithInt:100] forKey:@"height"];
